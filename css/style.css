@@ -114,6 +114,16 @@ body {
     font-size: 2em;
     text-align: justify;
 }
+
+.about h2 {
+    font-size: 1.5em;
+}
+
+.about h3 {
+    color: rgb(0, 174, 255);
+    font-weight: 700;
+    font-size: 1.2em;
+}
 /* End About */
 
 
@@ -139,21 +149,25 @@ body {
     line-height: 2;
 }
 
+.work h2 {
+    font-size: 2.8em;
+}
+
 .work .content h1 {
     font-weight: bold;
     font-weight: 700;
-        color: rgb(0, 174, 255); 
-        margin-top: 50px;
+    color: rgb(0, 174, 255);
+    margin-top: 50px;
     
 }
 
 .work .content p {
     text-indent: 30px;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 .work .content li {
-    font-size: large;
+    font-size: 1.5em;
 }
 /* End Work  */
 
@@ -161,8 +175,26 @@ body {
 
 /* Contact */
 .contact {
-    margin: 50px 0;
-    min-height: 800px;
+    margin-bottom: 500px;
+
+}
+
+.contact h2 {
+    font-size: 2.5em;
+}
+
+.contact label {
+    color: rgb(0, 174, 255);
+}
+
+.contact .form-group input {
+    width: 100%;
+    height: 60px;
+    border:  2px solid rgb(0, 174, 255);
+}
+
+.contact .form-group textarea {
+    border:  2px solid rgb(0, 174, 255);
 }
 /* End Contact */
 
@@ -178,7 +210,6 @@ body {
 .contact h2 {
     color: rgb(0, 174, 255); 
     font-weight: bold;
-
 }
 
 hr {
@@ -187,6 +218,7 @@ hr {
 }
 
 
+/* Footer */
 footer {
     position: absolute;
     bottom: 0;
@@ -200,9 +232,33 @@ footer .wrapper {
     margin-bottom: 40px;
 }
 
+footer .social-media-wrap {
+    display: flex;
+}
+
+footer .social-media-wrap a {
+    font-size: 2.2em;
+}
+
 footer .wrapper h4 {
     color: white;
     cursor: pointer;
+}
+
+footer .social-media h4 ,
+footer .navigasi-footer h4 {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+footer .navigasi-footer ul {
+    display: flex;
+}
+
+footer .navigasi-footer a {
+    font-size: 1.5em;
 }
 
 .social-icon {
@@ -232,6 +288,7 @@ footer p {
     color: white;
     font-size: 1.2em;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 footer p i {
     color: red;
