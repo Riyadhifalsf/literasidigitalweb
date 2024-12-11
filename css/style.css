@@ -4,6 +4,7 @@ html {
 body {
     margin-bottom: 100px;
     margin-top: 30px;
+    overflow-x: hidden;
 }
 
 /* Header And Navbar */
@@ -191,22 +192,53 @@ footer {
     bottom: 0;
     background-color: #333;
     width: 100%;
-    height: 100px;
-    padding-top: 40px;
+    padding-top: 30px;
 }
+
+footer .wrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+footer .wrapper h4 {
+    color: white;
+    cursor: pointer;
+}
+
+.social-icon {
+    color: #ffffff; /* Warna ikon */
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Warna saat hover */
+  }
+  
+  /* Gaya untuk link navigasi */
+  ul.list-unstyled li a {
+    color: #ffffff; /* Warna teks */
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  ul.list-unstyled li a:hover {
+    color: #007bff; /* Warna saat hover */
+  }
+  
+
 footer p {
     color: white;
     font-size: 1.2em;
+    margin-bottom: 30px;
 }
 footer p i {
     color: red;
 }
 
-@media screen and (max-width: 768px){
-
-    body {
-        overflow-x: hidden;
-    }
+/* Perangkat mobile (smartphone) dengan lebar layar maksimal 600px */
+@media screen and (max-width: 600px){
 
     .about,
     .work,
@@ -348,4 +380,9 @@ footer p i {
         margin-bottom: 50px;
     }
     /* End Contact */
+}
+
+/* Tablet (termasuk iPad) dengan lebar layar antara 601px dan 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
 }
