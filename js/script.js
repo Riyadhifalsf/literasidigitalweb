@@ -15,7 +15,7 @@
 
         // Animasi scroll ke elemen tujuan dengan offset 80px
         $('html, body').animate({
-            scrollTop: elemenTujuan.offset().top - 180
+            scrollTop: elemenTujuan.offset().top - 100
         }, 1000, 'easeInOutExpo');
     });
 
@@ -83,6 +83,17 @@ function applyParallax(wScroll) {
     $('.about .p-right').css({
         'transform' : 'translateX(' + +Math.min(-wScroll / 2, -600) + 'px)'
     });
+
+    // Portfolio
+    if( wScroll > $('.kelompok-2').offset().top - 250 ) {
+        $('.kelompok-2 .cards').each(function(i) {
+            setTimeout(function() {
+                $('.kelompok-2 .cards').eq(i).addClass('muncul');
+            }, 300 * (i+1));
+        });
+        
+    }
+
 }
 
 // Fungsi untuk reset efek parallax pada mobile
