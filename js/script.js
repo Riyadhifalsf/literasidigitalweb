@@ -15,7 +15,7 @@
 
         // Animasi scroll ke elemen tujuan dengan offset 80px
         $('html, body').animate({
-            scrollTop: elemenTujuan.offset().top - 200
+            scrollTop: elemenTujuan.offset().top - 180
         }, 1000, 'easeInOutExpo');
     });
 
@@ -50,16 +50,14 @@
 // Fungsi untuk memeriksa apakah media query cocok
 function checkMediaQuery() {
     const wScroll = $(window).scrollTop();
-    const mediaQuery = window.matchMedia('(min-width: 768px)'); // Untuk desktop atau lebih besar
+    const mediaQuery = window.matchMedia('(min-width: 1025px)'); 
 
     if (mediaQuery.matches) {
-        // Jika ukuran layar >= 768px (desktop), aktifkan parallax
         applyParallax(wScroll);
     } else {
-        // Jika ukuran layar < 768px (mobile), nonaktifkan parallax
-        // Pada perangkat mobile, kita tidak menerapkan efek parallax
         resetParallax();
     }
+
 }
 
 // Fungsi untuk menerapkan efek parallax
