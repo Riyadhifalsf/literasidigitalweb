@@ -79,11 +79,11 @@ function applyParallax(wScroll) {
 
     // About section
     $('.about .p-left').css({
-        'transform' : 'translateX(' + Math.max(wScroll / 3, 600) + 'px)'
+        'transform' : 'translateX(' + Math.max(wScroll / 2, 600) + 'px)'
     });
 
     $('.about .p-right').css({
-        'transform' : 'translateX(' + +Math.min(-wScroll / 3, -600) + 'px)'
+        'transform' : 'translateX(' + +Math.min(-wScroll / 2, -600) + 'px)'
     });
 }
 
