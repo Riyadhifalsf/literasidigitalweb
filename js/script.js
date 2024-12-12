@@ -58,6 +58,15 @@ function checkMediaQuery() {
         resetParallax();
     }
 
+    if( wScroll > $('.kelompok-2').offset().top - 250 ) {
+        $('.kelompok-2 .cards').each(function(i) {
+            setTimeout(function() {
+                $('.kelompok-2 .cards').eq(i).addClass('muncul');
+            }, 300 * (i+1));
+        });
+        
+    }
+
 }
 
 // Fungsi untuk menerapkan efek parallax
@@ -94,6 +103,8 @@ function applyParallax(wScroll) {
         
     }
 
+    
+
 }
 
 // Fungsi untuk reset efek parallax pada mobile
@@ -101,6 +112,7 @@ function resetParallax() {
     // Reset semua transformasi untuk menghindari efek parallax
     $('.jumbotron-main h1, .jumbotron-main p, .jumbotron-main button').css('transform', 'none');
     $('.about .p-left, .about .p-right').css('transform', 'none');
+
 }
 
 // Memanggil fungsi ketika halaman digulir
@@ -113,7 +125,14 @@ $(document).ready(function() {
     checkMediaQuery();
 });
 
-
+$(document).ready(function(){
+    $("a[href^='#']").on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top -100
+        }, 500);
+    });
+});
 
 
 

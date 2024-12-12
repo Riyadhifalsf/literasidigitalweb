@@ -150,15 +150,13 @@ body {
     margin-top: 2rem;
 }
 
-.kelompok-2 .cards h3{
+.kelompok-2 .cards h3 {
     color: rgb(0, 174, 255);
     font-weight: 700;
     font-size: 1.5em;
     text-transform: capitalize;
+    text-align: center;
 }
-
-
-
 /* End Style cards */
 
 
@@ -188,12 +186,31 @@ body {
     font-size: 2.8em;
 }
 
+.work .well {
+    width: 30%;
+    border: 1px solid rgb(0, 174, 255);
+}
+
+.work .well h3 {
+    color: rgb(0, 174, 255);
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+}
+
+
 .work .content h1 {
     font-weight: bold;
     font-weight: 700;
     color: rgb(0, 174, 255);
     margin-top: 50px;
     
+}
+
+.work .content h4 {
+    margin-top: 50px;
+    font-size: 1.6em;
+    font-style: italic;
 }
 
 .work .content p {
@@ -302,6 +319,10 @@ footer .navigasi-footer h4 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2em;
+}
+
+footer .navigasi-footer h4 {
+    text-align: center;
 }
 
 footer .navigasi-footer ul {
@@ -500,6 +521,18 @@ footer p a:hover {
         margin-top: 30px;
     }
 
+    .work .well {
+        width: 80%;
+        border: 1px solid rgb(0, 174, 255);
+    }
+    
+    .work .well h3 {
+        color: rgb(0, 174, 255);
+        font-weight: 700;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
     .work .content > * {
         line-height: 2;
     }
@@ -571,7 +604,9 @@ footer p a:hover {
         text-transform: uppercase;
         font-size: 2em;
     }
-
+    footer .navigasi-footer h4 {
+            text-align: left;
+    }
     footer .navigasi-footer ul {
         display: flex;
     }
@@ -586,6 +621,7 @@ footer p a:hover {
         padding: 10px;
         text-decoration: none;
     }
+    
     
     .social-icon:hover {
         color: #007bff; 
@@ -615,7 +651,42 @@ footer p a:hover {
 }
 
 /* Tablet (termasuk iPad) dengan lebar layar antara 768px dan 1440px */
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    /* Header And Navbar */
+    .navbar {
+        padding: 20px 50px;
+        font-size: 1em;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: rgb(157, 224, 255) ;
+    }
+
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background-color: rgba(166, 227, 255, 0.233) ;
+    }
+
+    .header .navbar .logo {
+        font-size: 1.4em;
+    }
+
+    .header .navbar .logo:hover {
+        text-shadow: 1px 1px 2px white;
+    }
+    .header .navbar-inverse .navbar-nav > li {
+        font-size: .8em;
+    }
+
+    .header .navbar-inverse .navbar-nav > li > a {
+        margin-bottom: 5px;
+    }
+    .nav li a:hover {
+        background: rgba(52, 160, 255, 0.1) !important;
+        color: rgb(0, 174, 255); 
+        border-radius: 20px;
+    }
+    /* End Header and Navbar */
+
     /* Jumbotron */
     .jumbotron-main {
         height: 100vh;
@@ -688,6 +759,19 @@ footer p a:hover {
 
 
     /* Work */
+
+    .work .well {
+        width: 100%;
+        border: 1px solid rgb(0, 174, 255);
+    }
+    
+    .work .well h3 {
+        color: rgb(0, 174, 255);
+        font-weight: 700;
+        font-size: 2em;
+        text-align: center;
+    }
+
     .work .content p {
         font-size: 2em;
     }
@@ -711,10 +795,15 @@ footer p a:hover {
 
 
     /* Footer */
+
+    footer .navigasi-footer h4 {
+        text-align: left;
+    }
+
     footer .navigasi-footer ul {
         display: flex;
         flex-direction: column;
-    }
+    }   
     /* End Footer */
     
 }
