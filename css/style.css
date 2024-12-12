@@ -654,8 +654,8 @@ footer p a:hover {
 @media screen and (min-width: 768px) and (max-width: 1440px) {
     /* Header And Navbar */
     .navbar {
-        padding: 20px 50px;
-        font-size: 1em;
+        padding: 20px 30px;
+        font-size: 1.6em;
     }
 
     .navbar-inverse .navbar-toggle .icon-bar {
